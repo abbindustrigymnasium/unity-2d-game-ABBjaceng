@@ -38,6 +38,12 @@ TagManager:
   - 
   - 
   m_SortingLayers:
+  - name: Background
+    uniqueID: 2160453983
+    locked: 0
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: Airplane
+    uniqueID: 629858823
     locked: 0
