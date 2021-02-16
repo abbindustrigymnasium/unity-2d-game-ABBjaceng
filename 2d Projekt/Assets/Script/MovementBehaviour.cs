@@ -17,5 +17,6 @@ public class MovementBehaviour : MonoBehaviour
 
 
         }
+        if (transform.position.y <= -11)
     }
 }

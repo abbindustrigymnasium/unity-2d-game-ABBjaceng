@@ -22,7 +22,7 @@ public class HitBehaviour : MonoBehaviour
         // When target is hit
         if (col.gameObject.tag == "Bomb")
         {
-            Debug.Log("Target was Hit!");
+            Debug.Log("Target was Hitsdsdsd!");
 
             
         }
