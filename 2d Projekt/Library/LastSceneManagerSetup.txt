@@ -1,5 +1,5 @@
 sceneSetups:
-- path: G:/Unity/first Project/Assets/test.unity
+- path: Assets/Scenes/MainFinish.unity
   isLoaded: 1
   isActive: 1
   isSubScene: 0

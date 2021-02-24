@@ -6,6 +6,10 @@ TagManager:
   tags:
   - Bomb
   - House
+  - Plane
+  - Ground
+  - ShowOnPause
+  - ShowOnFinish
   layers:
   - Default
   - TransparentFX

@@ -174,4 +174,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fc4bc50cc07f8a0498790aae64a103b8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  fireballSpeed: 0.1
+  Speed: 1
+  hitEffect: {fileID: 3287918009097676603, guid: 80e95be87d1197f4cb145385f51cb4ad,
+    type: 3}

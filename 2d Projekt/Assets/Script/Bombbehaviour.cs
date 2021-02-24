@@ -4,16 +4,9 @@ using UnityEngine;
 using System;
 
 public class Bombbehaviour : MonoBehaviour
-{
-    private float fireballXValue;
-    public float fireballSpeed;
+{ 
     public float Speed;
-
-    void Start()
-    {
-        // getting the initial position where prefab is created
-        fireballXValue = gameObject.transform.position.x;
-    }
+    public GameObject hitEffect;
 
     // Update is called once per frame
     void Update()
@@ -29,13 +22,19 @@ public class Bombbehaviour : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D col)
     {
-        Debug.Log("Target was Hit!" + col.gameObject.tag + this.gameObject.tag);
         // When target is hit
         if (col.gameObject.tag == "House")
         {
-            Debug.Log("Target was Hit!");
+            GameObject effect = Instantiate(hitEffect, transform.position, Quaternion.identity);
+            Destroy(effect, 1f);
             Destroy(gameObject);
             Destroy(col.gameObject);
+        }
+        if (col.gameObject.tag == "Ground")
+        {
+            GameObject effect = Instantiate(hitEffect, transform.position, Quaternion.identity);
+            Destroy(effect, 1f);
+            Destroy(gameObject);
         }
     }
 }
