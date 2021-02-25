@@ -11,9 +11,9 @@ public class MenuBehaviour : MonoBehaviour
     {
         transform.Translate(Vector2.left * Time.deltaTime * speed);
 
-        if (transform.position.x <= -15)
+        if (transform.position.x <= -20)
         {
-            transform.position = new Vector2(transform.position.x + 30, transform.position.y);
+            transform.position = new Vector2(transform.position.x + 40, transform.position.y);
 
         }
     }
